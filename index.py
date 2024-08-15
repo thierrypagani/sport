@@ -59,10 +59,10 @@ elif page == pages[2]:
        st.write(Athletes[Athletes["Height (cm)"]== Athletes["Height (cm)"].min()] )
       
     if st.checkbox("### Joueur le moins bien payé"):
-       st.write(Athletes[Athletes["Total Pay"]== Athletes["Total Pay"].max()]) 
+       st.write(Athletes[Athletes["Rank"]== Athletes["Rank"].max()])  
     
     if st.checkbox("### Joueur le mieux payé"):
-       st.write(Athletes[Athletes["Total Pay"]== Athletes["Total Pay"].min()])
+       st.write(Athletes[Athletes["Rank"]== Athletes["Rank"].min()]) 
 
     if st.checkbox("### Joueur le plus vieu"):
        st.write(Athletes[Athletes["Year of birth"]== Athletes["Year of birth"].min()])
