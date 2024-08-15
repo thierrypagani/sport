@@ -40,6 +40,9 @@ if page == pages[0]:
 elif page == pages[1]:
     st.write("### Exploration des données")
 
+    if st.checkbox("### Joueurs par Nation et par Sport"):
+       st.write(Athletes[['Nation', 'Sport']].value_counts())
+        
     if st.checkbox("### Afficher les colonnes"):
        st.write(Athletes.columns)  
     
