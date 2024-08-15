@@ -69,3 +69,6 @@ elif page == pages[2]:
 
     if st.checkbox("### Joueur le plus jeune"):
        st.write(Athletes[Athletes["Year of birth"]== Athletes["Year of birth"].max()])
+
+    if st.checkbox("### Joueur le mieux payé en Espagne"):
+       st.write(Athletes[Athletes['Nation'] == 'Spain'][['Name', 'Total Pay','Rank']].max())
